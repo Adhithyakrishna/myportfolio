@@ -28,7 +28,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url("/static/img/bg.PNG");
+    background-image: url("/static/img/bg.png");
     height: 450px;
     overflow: hidden;
 }
@@ -211,7 +211,7 @@ h2.educationHeader {
   min-height: 25px;  
 }
 .holderEducationExperienceInfo {
-    background: url(/static/img/dotted.PNG) bottom repeat-x;
+    background: url(/static/img/dotted.png) bottom repeat-x;
     padding: 0px 0px 50px 0px;
     /* margin: 75px 0px 60px 0px; */
     background-attachment: fixed;
@@ -452,7 +452,7 @@ h2.educationHeader {
     margin: 10px; 
 }
 .socialImg {
-    background: url(/static/img/social.PNG);
+    background: url(/static/img/social.png);
     float: left;
     width: 50px;
     height: 50px;
@@ -601,7 +601,7 @@ html {
 }
 .blogImgHolder {
     margin: 30px auto 15px auto;
-    background: url(/static/img/blogger.PNG);
+    background: url(/static/img/blogger.png);
     background-repeat: no-repeat;
     width: 150px;
     height: 200px;
