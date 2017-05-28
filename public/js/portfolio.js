@@ -29,8 +29,8 @@ $(document).ready(function() {
       	  infinite: true,
       	  slidesToShow: 3,
  		  slidesToScroll: 2,
-      	  // autoplay: true,
-      	  // autoplaySpeed: 3000,
+      	  autoplay: true,
+      	  autoplaySpeed: 3000,
       	  prevArrow:"<div class='previousArrow'><div class='arrowholderLeft'></div></div>",
   	      nextArrow:"<div class='rightArrow'><div class='arrowholderRight'></div></div>",
 	      responsive: [
@@ -70,6 +70,7 @@ $(document).ready(function() {
 	            width:$(this).attr('data-percent')
 	        },2000);
 	    });
+	    $(window).off("scroll", scrollFunction);
 	}
 
 	function isScrolledIntoView(elem) {
@@ -92,11 +93,14 @@ $(document).ready(function() {
 	    }
 	}
 
-	$(window).scroll(function(event) {
-	    /* Act on the event */
-	    allInView();
-	});
+	var scrollFunction = function() {
+		$(window).scroll(function(event) {
+		    allInView();
+		});
+	}
 
+	scrollFunction();
+	
 	$( ".project , .writings" ).hover(
 	  function() {
 	    $( this ).addClass( "animator" );
