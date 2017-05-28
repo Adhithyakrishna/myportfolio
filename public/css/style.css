@@ -358,14 +358,15 @@ h2.educationHeader {
     background-size :712.5px auto;
 }
 .technologyHolder {
-    box-shadow: -1px 7px 20px 1px #ddd;
+    border: 2px solid #ddd;
+    /*box-shadow: -1px 7px 20px 1px #ddd;*/
     box-sizing: border-box;
     overflow: hidden;
     padding: 20px 10px;
     margin: 10px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    border-bottom: 3px solid transparent;
+    /*border-bottom: 3px solid transparent;*/
     height: 225px;
     background: white;
 }
