@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	
+	 setFlag = "true";
 	 urlHolder = {
 		"sprite" : "//spritemapper.herokuapp.com",
 		"todo": "//mytasklistapp.herokuapp.com/task",
@@ -95,7 +96,8 @@ $(document).ready(function() {
 
 	var scrollFunction = function() {
 		$(window).scroll(function(event) {
-			if(!($(".skillContainer").hasClass('animated'))) {
+			if(!($(".skillContainer").hasClass('animated')) && setFlag) {
+				setFlag="false";
 			    allInView();
 			}
 		});
