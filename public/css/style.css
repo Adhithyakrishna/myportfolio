@@ -211,10 +211,8 @@ h2.educationHeader {
   min-height: 25px;  
 }
 .holderEducationExperienceInfo {
-    background: url(/static/img/dotted.png) bottom repeat-x;
     padding: 0px 0px 50px 0px;
     /* margin: 75px 0px 60px 0px; */
-    background-attachment: fixed;
     border-bottom: 0.5px solid #ededed;
 }
 
@@ -509,7 +507,24 @@ h2.educationHeader {
 ul {
     list-style-type: none;
 }
+.skillsInfo {
+    border-bottom: 0.5px solid #ededed;
+}
 
+/*mobile specific*/
+.ismobile .html .skillbar-bar , .ismobile .css .skillbar-bar,
+.ismobile .handle .skillbar-bar {
+    width: 80%;
+}
+.ismobile .query .skillbar-bar {
+    width: 85%;
+}
+.ismobile .node .skillbar-bar {
+    width: 50%;
+}
+.ismobile .react .skillbar-bar {
+    width: 40%;
+}
 /*has to be edited*/
 .writingsImageHolder {
     height: auto;
@@ -692,11 +707,6 @@ html {
 .myWritingsHeader {
     margin: 10px 0px 25px 0px;
 }
-.skillsInfo {
-    background: url(/static/img/highlight.jpg) ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 .readMoreHolder {
     cursor: pointer;
@@ -734,6 +744,18 @@ a {
 .contactHolder{
     margin: 2% 2% 0 2%;
     overflow: hidden; 
+}
+
+@media all and (min-width: 1024px) {
+    .skillsInfo {
+        background: url(/static/img/highlight.jpg) ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .holderEducationExperienceInfo {
+        background: url(/static/img/dotted.png) bottom repeat-x;
+        background-attachment: fixed;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
