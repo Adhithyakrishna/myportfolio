@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+	  var isMobile = window.matchMedia("only screen and (max-width: 768px)");
+
+	   if (isMobile.matches) {
+	   		$('body').addClass('ismobile');
+	   }
 	
 	 setFlag = "true";
 	 urlHolder = {
@@ -103,7 +109,10 @@ $(document).ready(function() {
 		});
 	}
 
-	scrollFunction();
+	if(!$('body').hasClass('ismobile'))
+	{
+		scrollFunction();
+	}
 
 	$( ".project , .writings" ).hover(
 	  function() {
