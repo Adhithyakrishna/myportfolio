@@ -70,7 +70,7 @@ $(document).ready(function() {
 	            width:$(this).attr('data-percent')
 	        },2000);
 	    });
-	    $(window).off("scroll", scrollFunction);
+	    $(".skillContainer").addClass('animated');
 	}
 
 	function isScrolledIntoView(elem) {
@@ -95,12 +95,14 @@ $(document).ready(function() {
 
 	var scrollFunction = function() {
 		$(window).scroll(function(event) {
-		    allInView();
+			if(!($(".skillContainer").hasClass('animated'))) {
+			    allInView();
+			}
 		});
 	}
 
 	scrollFunction();
-	
+
 	$( ".project , .writings" ).hover(
 	  function() {
 	    $( this ).addClass( "animator" );
