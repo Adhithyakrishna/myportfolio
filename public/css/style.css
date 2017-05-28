@@ -1,0 +1,971 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Crete Round', serif;
+}
+.profileImage
+{
+    background-image: url(/static/img/profilepic.jpg);
+    width: 175px;
+    height: 175px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 90px;
+    opacity: 0.9;
+}
+.profileElements
+{
+    margin: 70px;
+}
+.profileImageBanner    
+{
+    border-bottom: 0.5px solid #ededed;
+    box-sizing: border-box;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("/static/img/bg2.PNG");
+    height: 450px;
+    overflow: hidden;
+}
+.nameContainer
+{
+    font-size: 40px;
+}
+.aboutMe
+{
+    font-size: 24px;
+}
+.centerContent,.technologyName
+{
+    font-family: 'Amaranth', sans-serif;    
+}
+.shortDescription{
+     list-style-type: none;
+}
+.about-title
+{
+    margin: 20px;
+}
+.description {
+    text-align: left;
+    list-style-type: none;
+    width: 80%;
+    display: inline-block;
+    line-height: 45px;
+    font-size: 22px;
+}
+.holderAboutInfo
+{
+    text-align: center;
+    border-bottom: 0.5px solid #ededed;
+    padding: 100px 10% 100px 10%;
+}
+
+.holderEducationExperienceInfo
+{
+    text-align: center;
+}
+.educationExperienceHolder{
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 90%;
+    display: inline-block;
+    margin: 75px 0px 60px 0px;
+    padding: 0 10% 0 10%;
+}
+.experienceInfo,
+.educationInfo
+{
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+#educationHeader
+{
+    margin-left: -35px;
+    overflow: hidden;
+}
+.skillLevel.leftContent,.skillLevel.rightContent {
+    float: left;
+    width: 47.5%;
+}
+.skillHeaderHolder {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 90%;
+    display: inline-block;
+    padding: 20px 10% 20px 10%;
+    margin: 35px 0px 60px 0px;
+}
+.holderSkillInfoContainer,.ancillaryHeaderHolder {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+.technology {
+    width: 24%;
+    text-align: center;
+    display: inline-block;
+}
+/*rough*/
+.educationContent {
+    position: relative;
+    background-position: 0px 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 200px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-size-adjust: 100%;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 207.5px 116.5px;
+    transform-origin: 207.5px 116.5px;
+    caret-color: rgb(51, 51, 51);
+    background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
+    border-top: 0px none rgb(51, 51, 51);
+    border-right: 0px none rgb(51, 51, 51);
+    border-bottom: 0px none rgb(51, 51, 51);
+    border-left: 2px solid rgb(229, 229, 229);
+    font: normal normal normal normal 16px / 22.8571px Poppins, sans-serif;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 40px 5% 20px 5%;
+}/*#DIV_1*/
+
+.educationHeader:after {
+    position: absolute;
+    top: 45px;
+    left: -7px;
+    box-sizing: border-box;
+    color: transparent;
+    content: '""';
+    display: block;
+    height: 12px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-size-adjust: 100%;
+    width: 12px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 5px 5px;
+    transform-origin: 5px 5px;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    border-radius: 50px;
+    font: normal normal 500 normal 16px / 17.6px Poppins, sans-serif;
+    list-style: none outside none;
+    /* margin: 6px 13px 0px -7%; */
+    outline: rgb(51, 51, 51) none 0px;
+    }
+
+#eduSpritImgHolder
+{
+    display: inline-block;
+    width: 76px;
+    overflow: hidden;
+    float: left;
+}
+#eduSpritImg {
+    width: 100%;
+    background-image: url(/static/img/sprite.jpg);
+    border-radius: 48px;
+    border: 2px solid rgba(0, 0, 0, 0.64);
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: 7px -2px;
+    width: 70px;
+    height: 70px;
+}
+.skillSet {
+    background-position: -122px -1px !important;
+}
+.contentEducationHolder {
+    color: rgba(0, 0, 0, 0.72);
+    box-sizing: border-box;
+    padding: 20px 10% 0px 0px;
+    font-size: 26px;
+    height: 70px;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    width: 83%;
+    width: calc(100% - 76px);
+}
+.educationContentHolder .educationContent:last-child {
+    padding-bottom: 0px;
+    height: auto;
+}
+
+#yearHolder {
+    font-size: 18px;
+    line-height: 70px;
+}
+
+h2.educationHeader {
+  min-height: 25px;  
+}
+.holderEducationExperienceInfo {
+    background: url(/static/img/dotted.PNG) bottom repeat-x;
+    padding: 0px 0px 50px 0px;
+    /* margin: 75px 0px 60px 0px; */
+    background-attachment: fixed;
+    border-bottom: 0.5px solid #ededed;
+}
+
+.triangle {
+    width: 0px;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;        /* Safari */
+    -webkit-transform: rotate(-180deg);    /* Firefox */
+    -moz-transform: rotate(-180deg);    /* IE */
+    -ms-transform: rotate(-180deg);    /* Opera */
+    -o-transform: rotate(-180deg);    /* Internet Explorer */
+    margin-left: -9px;
+}
+.loaderImage {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+}
+
+/*progressive Scroller*/
+.skillbar {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  position:relative;
+  display:block;
+  margin-bottom: 40px;
+  width:100%;
+  background:#eee;
+  height: 25px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+.skillHeader {padding: 45px 0 20px 0;}
+.skillbar-title {
+    min-width: 95px;
+    background: #000000;
+    position:absolute;
+    top:0;
+    left:0;
+    font-weight:bold;
+    font-size:13px;
+    color:#fff;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height: 25px;
+    line-height: 25px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+.skillLevel.leftContent {
+    margin: 0px 2.5% 0px 0px;
+}
+.skillLevel.rightContent {
+    margin: 0px 0% 0px 2.5%;
+}
+.skillbar-bar {
+    background: #000000;
+    height: 25px;
+    width:0px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right: 3px;
+    top:0;
+    font-size:11px;
+    height: 25px;
+    line-height: 25px;
+    color:#444;
+}
+.placeHolder,.placeHolder4 {
+    height: 700px;
+    width: 100%;
+    border: 1px solid black;
+}
+.ancillarySkills {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0px 70px 0px;
+    padding: 20px 10% 0 10%;
+}
+.skillSprite {
+    margin: auto;
+    background-image: url(/static/img/sprite.jpg);
+    width: 100px;
+    height: 100px;
+}
+.skillSprite.photoshop {
+    border-radius: 50px;
+}
+
+.skillSprite.java {
+    background-position :-266.0714285714286px -1.7857142857142858px;
+    background-size :712.5px auto;
+}
+.skillSprite.mongo {
+    background-position :-363.39285714285717px -1.7857142857142858px;
+    background-size :712.5px auto;
+}
+
+.skillSprite.express {
+    background-position: -475px -0.785714px;
+    background-size: 712.5px auto;
+}
+.skillSprite.photoshop {
+    background-position: -601.571429px -1.7857142857142858px;
+    background-size :712.5px auto;
+}
+.technologyHolder {
+    box-shadow: -1px 7px 20px 1px #ddd;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 20px 10px;
+    margin: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+    height: 225px;
+    background: white;
+}
+.logoImg {
+    padding: 10px 0 20px 0px;
+}
+.technologyName {
+    font-size: 20px;
+}
+.projectHolder {
+        text-align: center;
+    font-family: Poppins, sans-serif;
+}
+.myProjects {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 10% 0 10%;
+    margin: 0px 0px 85px 0px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+.projectsHolder {
+    height: auto;
+}
+.imgHolder {
+    margin: auto;
+    background-image: url(/static/img/projects.jpg);
+}
+#sprite .imgHolder {
+    width :200px;
+    height :200px;
+    background-position: 9.861751px 20.156682px;
+    background-size: 562.327189px auto;
+}
+
+#todo .imgHolder {
+    width: 200px;
+    height: 200px;
+    background-position: -246.08294930875576px -1.8433179723502304px;
+    background-size: 737.3271889400921px auto;
+}
+
+#photo .imgHolder {
+    width :200px;
+    height :200px;
+    background-position :-476.49769585253455px -1.8433179723502304px;
+    background-size :737.3271889400921px auto;
+}
+.projectHeader,.buildHeader {
+    font-size: 23px;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: bold;
+    padding: 0 0 25px 0px;
+}
+.project {
+        box-shadow: -1px 7px 20px 1px #ddd;
+         box-sizing: border-box;
+        overflow: hidden;
+        padding: 20px 10px;
+        margin: 10px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 3px solid transparent;
+}
+.project {
+    cursor: pointer;
+    width: 31%;
+    display: inline-block;
+}
+.project.animator .imgHolder {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.contactHeader {
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 10px; 
+}
+.socialImg {
+    background: url(/static/img/social.PNG);
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.socialImgholder {
+    width: 40%;
+    float: left;
+    margin: 10px;
+    background: black;  
+}
+.socialHolder {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 0 4% 0 4%;
+    border-radius: 13px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+/*.project.animator .projectHeader {
+    display: none;
+        -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}*/
+/*.imgHolder:hover {}*/
+.projectDescription,.buildDescription {
+    font-size: 23px;
+    font-family: 'Amaranth', sans-serif;
+}
+.projectImg {
+    padding: 20px 20px 60px 20px;
+}
+
+.project.animator .projectDescription,.project.animator .projectHeader{
+    display: none;
+}
+.buildDescription {
+    display: none;
+}
+.project.animator .buildDescription {
+    display: block;
+}
+.projectDescriptionHolder {
+    padding: 0px 20px 0px 20px;
+}
+.writingsHolder {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+
+/*has to be edited*/
+.writingsImageHolder {
+    height: auto;
+    cursor: pointer;
+}
+.writings {
+    border: 1px solid #c7c7c7;
+    height: 510px !important;
+    margin: 0px 5px 0px 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+}
+.sliderHolder {
+        box-sizing: border-box;
+        overflow: hidden;
+        display: inline-block;
+        padding: 20px 8% 0 8%;
+        margin: 0px 0px 120px 0px;
+        width: 100%;
+        text-align: center;
+}
+.previousArrow {
+    position: absolute;
+    left: 4.5%;
+    top: 30%;
+    width: 50px;
+    height: 35%;
+    margin: 1% 0% 1% 0%;
+    z-index: 5;
+    background: #434343;
+    cursor: pointer;
+    /*box-shadow: -4px 0px 20px 4px #ddd;*/
+}
+.rightArrow {
+    position: absolute;
+    right: 4.5%;
+    width: 50px;
+    top: 30%;
+    height: 35%;
+    margin: 1% 0% 1% 0%;
+    z-index: 5;
+    background: #434343;
+    cursor: pointer;
+    /*box-shadow: 4px 0px 20px 4px #ddd;*/
+}
+.arrowholderRight {
+    position: absolute;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
+    height: 20px;
+    width: 20px;
+    border-color: white;
+    transform: rotate(-45deg);
+    top: 43%;
+    padding: 0px;
+    right: 33%;
+}
+.arrowholderLeft {
+    position: absolute;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
+    height: 20px;
+    width: 20px;
+    border-color: white;
+    transform: rotate(134deg);
+    top: 43%;
+    left: 33%;
+    padding: 0px;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    background: black;
+    margin: 20px 0px 0px 0px;
+}
+
+/*hide scroll*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+.writingsDescription {
+    margin: 10px 0px 0px 0px; 
+}
+.blogImgHolder {
+    margin: 30px auto 15px auto;
+    background: url(/static/img/blogger.PNG);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 200px;
+}
+
+#civilWar .blogImgHolder {
+    background-position: -2.3972602739726026px -2.3972602739726026px;
+}
+
+#teresa .blogImgHolder {
+        background-position: -166.39726px -2.39726px;
+}
+
+#quintessence .blogImgHolder {
+    background-position: -349.39726px 7.60274px;
+}
+
+#savegirlChild .blogImgHolder {
+   background-position: -511.39726px 7.60274px; 
+}
+
+#friendship .blogImgHolder {
+    background-position: -698.39726px 7.60274px;
+}
+
+#dearCupid .blogImgHolder {
+    background-position: -864.39726px 7.60274px;
+}
+
+#celestial .blogImgHolder {
+    background-position: -1057.39726px 7.60274px;
+}
+
+.writings.animator .blogImgHolder {
+        -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+#gmail .socialImg {
+    background-position: -3px -3px;
+    background-size: 244.321168px auto;
+ }
+ #github .socialImg {
+    background-position: -59.246753px -1.649351px;
+    background-size: 229.012987px auto;
+ }
+ #codeopen .socialImg {
+    background-position: -124.438356px -1.684932px;
+    background-size: 236.630137px auto;
+ }
+ #blog .socialImg {
+    background-position: -170.091503px 0.346405px;
+    background-size: 222.398693px auto;
+ }
+ #blog, #github {
+    float: right;
+ }
+.pauseIt .arrowholderLeft , .pauseIt .arrowholderRight {
+    left: 25%;
+    transform: rotate(0deg);
+    border-collapse: collapse;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    float: left;
+    height: 32px;
+    text-decoration: none solid rgb(34, 34, 34);
+    width: 26px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 9px 12px;
+    transform-origin: 9px 12px;
+    caret-color: rgb(255, 255, 255);
+    border-top: 0px none rgb(255, 255, 255);
+    border-right: 10px solid rgb(255, 255, 255);
+    border-bottom: 0px none rgb(255, 255, 255);
+    border-left: 10px solid rgb(255, 255, 255);
+    outline: rgb(255, 255, 255) none 0px;
+}
+.writingsDescription {
+    cursor: pointer;
+}
+.ancillaryHeader {
+    padding: 85px 0 25px 0;
+}
+.projectHeaderHolder {
+    margin: 15px 0 40px 0;
+}
+.myWritingsHeader {
+    margin: 10px 0px 25px 0px;
+}
+.skillsInfo {
+    background: url(/static/img/highlight.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.readMoreHolder {
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    bottom: 15px;
+    line-height: 30px;
+    background: black;
+    color: white;
+    height: 30px;
+    padding: 7px 20px 7px 20px;
+    width: auto;
+    box-shadow: 2px 6px 5px #888888;
+}
+.blogger.socialImg,.githubber.socialImg {
+    float: right;
+
+}
+
+.urlHolder {
+    float: left;
+    margin: 1%;
+    text-align: center;
+    width: 78%;
+}
+
+a {
+    color: white;
+    line-height: 50px;
+    text-decoration: none;
+}
+.contactHolder{
+    margin: 2%;
+    overflow: hidden; 
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .ancillaryHeader{
+        padding: 10px 0 25px 0;
+    }
+    .holderAboutInfo {
+        padding: 45px 5% 70px 5%;
+    }
+    .educationExperienceHolder {
+         padding: 0 5% 0 5%;
+         margin: 50px 0px 50px 0px;
+    }
+    .skillHeaderHolder {
+         margin : 35px 0px 40px 0px;
+    }
+    .technology {
+        width: 45%;
+        margin: 10px; 
+    }
+    .ancillarySkills {
+        margin: 10px 0px 50px 0px; 
+    }
+    .myProjects {
+        padding: 10px 5% 0 5%;
+    }
+    .project {
+        width: 45%;
+        min-height: 625px;
+    }
+    .project:nth-child(3) {
+        margin: 80px 0px 0px 0px;
+    }
+    .blogImgHolder {
+        margin: 5px auto 15px auto; 
+    }
+    .writings {
+        height: 530px !important;
+    }
+    .sliderHolder {
+        margin: 0px 0px 80px 0px; 
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+.projectDescriptionHolder {
+    padding: 0px 7% 0px 7%;
+}
+.socialHolder {
+    margin: 10px auto;
+}
+.socialHolder {
+    padding: 0px;
+    border: 0px; 
+}
+ .profileElements {
+    margin: 40px 30px 30px 30px;
+ }
+ .nameContainer {
+    font-size :2em !important;
+ }
+ .profileImage {
+    width: 145px;
+    height: 145px;
+ }
+ .profileImageBanner {
+    height: 370px;
+ }
+ .aboutMe {
+    font-size: 1.2em !important;
+    margin-top: 20px;
+ }
+ .holderAboutInfo {
+    padding: 20px 10% 40px 10%;
+ }
+ .description {
+    font-size: 1.2em;
+    line-height: 1.75;
+    width: 100%;
+ }
+ .educationExperienceHolder {
+    width: 100%;
+ }
+ .experienceInfo, .educationInfo {
+    width: 100%;
+    margin: 0 0 20px 0;
+ }
+ .educationExperienceHolder {
+        width: 100%;
+        margin: 35px 0px 40px 0px;
+        padding: 0 12% 0 12%;
+ }
+ .educationInfo {
+        height: 785px;
+ }
+ .holderEducationExperienceInfo {
+    padding: 0px 0px 20px 0px;
+ }
+ 
+ .educationContent {
+    height: 225px; 
+ }
+ .educationContent {
+        padding: 20px 5% 20px 5%;
+ }
+ .educationHeader:after {
+    top : 25px;
+ }
+ .educationExperienceHolder {
+    padding : 0 5% 0 12%;
+ }
+ .contentEducationHolder {
+    padding: 20px 4% 0px 0px;
+ }
+ .skillHeaderHolder {
+    width : 100%;
+    padding : 20px 7% 20px 7%;
+ }
+ .skillHeader {
+    padding: 35px 5% 20px 5%;
+ }
+ .socialImgholder {
+    margin: 4px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    float: right !important;
+    border: 1px solid dodgerblue;
+ }
+ .skillLevel.leftContent, .skillLevel.rightContent {
+    float: left;
+    width: 100%;
+    margin: 0px; 
+}
+.skillHeaderHolder {
+    padding: 20px 5% 20px 5%;
+    margin: 5px 0px 10px 0px;
+}
+.ancillaryHeader {
+    padding: 45px 5% 5px 5%;
+}
+.ancillarySkills {
+    padding: 20px 5% 0 5%;
+    margin: 10px 0px 40px 0px;
+}
+.technologyHolder {
+    margin: 5px;
+}
+.technology {
+    width: 49%;
+}
+.myProjects {
+    padding: 10px 5% 0 5%;
+    margin: 0px 0px 25px 0px;
+    width: 90%;
+}
+.project {
+    width: 90%;
+    height: 440px;
+    padding: 10px 10px;
+}
+.projectImg {
+    padding: 0px 20px 10px 20px;
+    margin: 0px;
+}
+.projectHeaderHolder {
+    margin: 35px 0 10px 0;
+}
+.writings {
+    height: 560px !important;
+}
+.previousArrow,.rightArrow {
+      height: 15%;
+      top: 40%;
+      width: 30px;
+}
+.arrowholderLeft,.arrowholderRight {
+    top: 40%;
+    border-right: 7px solid white;
+    border-bottom: 7px solid white;
+    height: 14px;
+    width: 14px;
+}
+.projectDescription, .buildDescription {
+    font-size: 1em !important;
+}
+#sprite .imgHolder {
+    width: 135px;
+    height: 155px;
+    background-position: -13px -3px;
+    background-size: 536px auto;
+}
+#todo .imgHolder{
+    width :135px;
+    height :138.91304347826087px;
+    background-position :-180px -1.9565217391304348px;
+    background-size :524.3478260869565px auto;
+}
+#photo .imgHolder{
+    width :135px;
+    height :138.91304347826087px;
+    background-position :-342.39130434782606px -2.9347826086956523px;
+    background-size :524.3478260869565px auto;
+}
+.pauseIt .arrowholderLeft, .pauseIt .arrowholderRight {
+    left: 24%;
+    border-left: 7px solid rgb(255, 255, 255);
+    border-right: 7px solid rgb(255, 255, 255);
+    width: 18px;
+    height: 24px;
+}
+.sliderHolder {
+    margin: 0px 0px 70px 0px;
+}
+.project.animator .imgHolder {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.blogImgHolder {
+    margin:  40px auto 15px auto;
+}
+.writingsDescription {
+    padding: 5px;
+}
+.footer {
+    height: auto;
+}
+.blogger.socialImg, .githubber.socialImg {
+    float: left;
+}
+}
