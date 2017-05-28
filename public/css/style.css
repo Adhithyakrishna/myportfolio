@@ -801,6 +801,7 @@ a {
     height: 145px;
  }
  .profileImageBanner {
+    background-position: -150px -50px;
     height: 370px;
  }
  .aboutMe {
