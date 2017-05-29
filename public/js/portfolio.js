@@ -6,6 +6,9 @@ $(document).ready(function() {
 	   		$('body').addClass('ismobile');
 	   }
 	
+		headerWidth = $("#educationHeader").innerWidth() - 76;
+		$(".contentEducationHolder").innerWidth(headerWidth);
+	
 	 setFlag = "true";
 	 urlHolder = {
 		"sprite" : "//spritemapper.herokuapp.com",

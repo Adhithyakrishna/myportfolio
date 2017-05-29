@@ -437,6 +437,7 @@ h2.educationHeader {
     cursor: pointer;
     width: 31%;
     display: inline-block;
+    vertical-align: top;
 }
 .project.animator .imgHolder {
     -webkit-transform: scale(1.25);
