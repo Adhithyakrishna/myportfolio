@@ -89,6 +89,7 @@ body {
 {
     margin-left: -35px;
     overflow: hidden;
+    max-height: 76px;
 }
 .skillLevel.leftContent,.skillLevel.rightContent {
     float: left;
@@ -531,6 +532,9 @@ ul {
 .ismobile .react .skillbar-bar {
     width: 40%;
 }
+.ismobile .myProjects {
+     margin: 0px 0px 25px 0px;   
+}
 /*has to be edited*/
 .writingsImageHolder {
     height: auto;
@@ -786,7 +790,7 @@ a {
         margin: 10px 0px 50px 0px; 
     }
     .myProjects {
-        padding: 10px 5% 0 5%;
+        padding: 10px 5% 5% 5%;
     }
     .project {
         width: 45%;
