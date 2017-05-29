@@ -589,6 +589,10 @@ ul {
     width: 20px;
     border-color: white;
     transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);    /* Firefox */
+    -moz-transform: rotate(-45deg);    /* IE */
+    -ms-transform: rotate(-45deg);    /* Opera */
+    -o-transform: rotate(-45deg);    /* Internet Explorer */
     top: 43%;
     padding: 0px;
     right: 33%;
@@ -601,6 +605,10 @@ ul {
     width: 20px;
     border-color: white;
     transform: rotate(134deg);
+    -webkit-transform: rotate(134deg);    /* Firefox */
+    -moz-transform: rotate(134deg);    /* IE */
+    -ms-transform: rotate(134deg);    /* Opera */
+    -o-transform: rotate(134deg);    /* Internet Explorer */
     top: 43%;
     left: 33%;
     padding: 0px;
@@ -688,6 +696,10 @@ html {
 .pauseIt .arrowholderLeft , .pauseIt .arrowholderRight {
     left: 25%;
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);    /* Firefox */
+    -moz-transform: rotate(0deg);    /* IE */
+    -ms-transform: rotate(0deg);    /* Opera */
+    -o-transform: rotate(0deg);    /* Internet Explorer */
     border-collapse: collapse;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
