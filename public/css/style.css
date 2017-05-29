@@ -75,7 +75,7 @@ body {
     overflow: hidden;
     width: 90%;
     display: inline-block;
-    margin: 75px 0px 60px 0px;
+    margin: 75px 0px 40px 0px;
     padding: 0 10% 0 10%;
 }
 .experienceInfo,
@@ -101,7 +101,7 @@ body {
     width: 90%;
     display: inline-block;
     padding: 20px 10% 20px 10%;
-    margin: 35px 0px 60px 0px;
+    margin: 35px 0px 20px 0px;
 }
 .holderSkillInfoContainer,.ancillaryHeaderHolder {
     text-align: center;
@@ -387,7 +387,7 @@ h2.educationHeader {
     overflow: hidden;
     display: inline-block;
     padding: 10px 10% 0 10%;
-    margin: 0px 0px 85px 0px;
+    margin: 0px 0px 20px 0px;
     width: 100%;
     text-align: center;
     height: 100%;
@@ -722,13 +722,13 @@ html {
     cursor: pointer;
 }
 .ancillaryHeader {
-    padding: 85px 0 25px 0;
+    padding: 20px 0 25px 0;
 }
 .projectHeaderHolder {
-    margin: 15px 0 40px 0;
+    margin: 60px 0 15px 0;
 }
 .myWritingsHeader {
-    margin: 10px 0px 25px 0px;
+    margin: 40px 0px 5px 0px;
 }
 
 .readMoreHolder {
