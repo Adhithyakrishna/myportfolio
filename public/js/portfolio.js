@@ -145,6 +145,13 @@ $(document).ready(function() {
 		$(navUrl)[0].click();
 	});
 
+	$("#github_left.bannerSocialImgholder, #github_right.bannerSocialImgholder").unbind('click').bind('click', function(event) {
+		let navUrl = $(this).find('.githubUrl');
+		console.log(navUrl)
+		$(navUrl)[0].click();
+		
+	});
+
 	$(".writings, .project").unbind('click').bind('click', function(event) {
 		var selectedContent = $(this).attr('id');
 		var navUrl = urlHolder[selectedContent];

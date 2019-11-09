@@ -679,7 +679,7 @@ html {
     background-position: -3px -3px;
     background-size: 244.321168px auto;
  }
- #github .socialImg {
+ #github .socialImg, #github_left .socialImg{
     background-position: -59.246753px -1.649351px;
     background-size: 229.012987px auto;
  }
@@ -747,7 +747,7 @@ html {
     width: auto;
     box-shadow: 2px 6px 5px #888888;
 }
-.blogger.socialImg,.githubber.socialImg {
+.blogger.socialImg,.githubber.socialImg, .githubberbanner.socialImg {
     float: right;
 
 }
@@ -824,6 +824,15 @@ a {
 }
 
 @media all and (min-width: 320px) and (max-width: 767px) {
+
+.githubUrl {
+    display: none;
+}
+
+#github_left, #github_right {
+    width: 50px !important;
+    border-radius: 35px !important;
+}
 
 .projectDescriptionHolder {
     padding: 0px 7% 0px 7%;
@@ -1010,7 +1019,49 @@ a {
 .footer {
     height: auto;
 }
-.blogger.socialImg, .githubber.socialImg {
+.blogger.socialImg, .githubber.socialImg, .githubberbanner.socialImg {
     float: left;
 }
+}
+
+.bannerSocialMedias {
+    margin-top: 10px;
+}
+.bannerSocialHolder {
+    text-align: center;
+}
+
+#github_left, #github_right {
+    background: #000000;
+    display: inline-block;
+    padding: 1%;
+    width: 20%; 
+    margin : 0px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.githubsocialImg {
+    background-position: -59.246753px -1.649351px;
+    background-size: 229.012987px auto;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    background-image: url(/static/img/social.png);
+}
+
+.resumesocialImg {
+    width: 50px;
+    height: 50px;
+    background-position: 7.103449px 5px;
+    background-size: 37.054187px auto;
+    background-repeat: no-repeat;
+    background-image: url(/static/img/resume.png);
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    float: left;
 }
