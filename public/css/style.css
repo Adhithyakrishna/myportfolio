@@ -18,7 +18,7 @@ body {
 }
 .profileElements
 {
-    margin: 70px;
+    margin: 50px;
 }
 .profileImageBanner    
 {
@@ -845,7 +845,7 @@ a {
     border: 0px; 
 }
  .profileElements {
-    margin: 40px 30px 30px 30px;
+    margin: 30px 30px 30px 30px;
  }
  .nameContainer {
     font-size :2em !important;
