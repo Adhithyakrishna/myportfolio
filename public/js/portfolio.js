@@ -21,7 +21,7 @@ $(document).ready(function() {
 	urlHolder = {
 		"sprite": "//spritemapper.herokuapp.com",
 		"todo": "//mytasklistapp.herokuapp.com/task",
-		"photo": "",
+		"photo": "//adhithyaphotography.herokuapp.com/gallery",
 		"teresa": "//veraciousverves.blogspot.in/2013/12/mother-teresa.html",
 		"civilWar": "//veraciousverves.blogspot.in/2013/12/civil-war.html",
 		"friendship": "//veraciousverves.blogspot.in/2013/12/friendship.html",
