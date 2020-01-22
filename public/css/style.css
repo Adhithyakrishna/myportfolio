@@ -7,12 +7,13 @@ body {
 }
 .profileImage
 {
-    background-image: url(/static/img/profilepic.jpg);
-    width: 175px;
-    height: 175px;
+    width: 166px;
+    height: 144px;
+    background-position: -0px -0px;
+    background-size: 167px auto;
+    background-image: url(/static/img/ninjaImg.jpg);
     display: inline-block;
     background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 90px;
     opacity: 0.9;
 }
